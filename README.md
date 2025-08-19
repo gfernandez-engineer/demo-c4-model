@@ -1,6 +1,6 @@
 # C4-Model
 
-Este proyecto fue presentado en [nesse vídeo](https://youtu.be/lI2gOnIlsHM), que explica cómo el modelo C4 puede utilizarse para documentar la arquitectura de un sistema de biblioteca utilizando C4-PlantUML.
+Este proyecto fue presentado en [este vídeo](https://youtu.be/lI2gOnIlsHM), que explica cómo el modelo C4 puede utilizarse para documentar la arquitectura de un sistema de biblioteca utilizando C4-PlantUML.
 
 ## O que é o C4-Model?
 
