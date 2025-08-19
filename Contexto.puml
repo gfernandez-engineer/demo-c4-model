@@ -1,13 +1,13 @@
 @startuml BibliotecaContext
 !includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
 
-Person(usuario, "Usuário", "Usuário que interage com o sistema")
-System(sistemaGestao, "Sistema de Gestão de Biblioteca", "Sistema que gerencia o catálogo de livros e empréstimos")
-System_Ext(servicoPagamento, "Sistema de Pagamentos", "Sistema externo para processamento de pagamentos")
-System_Ext(servicoNotificacao, "Serviço de Notificações", "Serviço externo para enviar notificações")
+Person(usuario, "Usuario", "Usuario que interactúa con el sistema")
+System(sistemaGestao, "Sistema de Gestión de Biblioteca", "Sistema que gestiona el catálogo de libros y préstamos")
+System_Ext(servicoPagamento, "Sistema de Pagos", "Sistema externo para el procesamiento de pagos")
+System_Ext(servicoNotificacao, "Servicio de Notificaciones", "Servicio externo para enviar notificaciones")
 
-Rel(usuario, sistemaGestao, "Usa")
-Rel(sistemaGestao, servicoPagamento, "Processa pagamentos")
-Rel(sistemaGestao, servicoNotificacao, "Envia notificações")
+Rel(usuario, sistemaGestao, "Utiliza")
+Rel(sistemaGestao, servicoPagamento, "Procesa pagos")
+Rel(sistemaGestao, servicoNotificacao, "Envía notificaciones")
 
 @enduml

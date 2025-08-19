@@ -1,16 +1,16 @@
 @startuml BibliotecaContainer
 !includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
 
-Person_Ext(usuario, "Usuário", "Usuário que interage com o sistema")
-Container(webapp, "Aplicação Web", "React", "Frontend da aplicação")
-Container(mobileapp, "Aplicação Mobile", "React Native", "Frontend da aplicação mobile")
-Container(api, "API Backend", "Spring Boot", "API REST para funcionalidades de backend")
-ContainerDb(database, "Banco de Dados", "PostgreSQL", "Armazena informações do sistema")
+Person_Ext(usuario, "Usuario", "Usuario que interactúa con el sistema")
+Container(webapp, "Aplicación Web", "React", "Frontend de la aplicación web")
+Container(mobileapp, "Aplicación Móvil", "React Native", "Frontend de la aplicación móvil")
+Container(api, "API Backend", "Spring Boot", "API REST para funcionalidades del backend")
+ContainerDb(database, "Base de Datos", "PostgreSQL", "Almacena información del sistema")
 
-Rel(usuario, webapp, "Usa")
-Rel(usuario, mobileapp, "Usa")
-Rel(webapp, api, "Requisições HTTP(S)")
-Rel(mobileapp, api, "Requisições HTTP(S)")
-Rel(api, database, "SQL", "Usa")
+Rel(usuario, webapp, "Utiliza")
+Rel(usuario, mobileapp, "Utiliza")
+Rel(webapp, api, "Solicitudes HTTP(S)")
+Rel(mobileapp, api, "Solicitudes HTTP(S)")
+Rel(api, database, "SQL", "Utiliza")
 
 @enduml
